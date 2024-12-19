@@ -1,0 +1,205 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Inter, sans-serif;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  box-sizing: border-box;
+
+  height: fit-content;
+  border-bottom: 2px solid black;
+  align-items: center;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-middle {
+  display: flex;
+  gap: 50px;
+}
+.header-links:hover {
+  color: #3bc7c7;
+  transform: scale(1.1);
+}
+.header-links {
+  transition: tranform 0.8s ease, black 0.8s ease;
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+}
+.header-button {
+  height: 45px;
+  width: 140px;
+  margin-left: 15px;
+}
+.header-img {
+  height: 35px;
+  width: auto;
+}
+.header-svg {
+  height: 28px;
+  width: auto;
+}
+.introduction {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://anaxmedia.netlify.app/heroImage.png");
+  padding: 0 150px;
+}
+.introduction-button {
+  width: 140px;
+  height: 45px;
+}
+button {
+  font-size: 16px;
+  background-color: #23c1c1;
+  color: white;
+  transition: background-color 0.5s ease;
+  border-radius: 8px;
+  border: none;
+}
+button:hover {
+  border: 1px solid #23c1c1;
+  color: #23c1c1;
+  background-color: transparent;
+}
+h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+.introduction-nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.introduction-link {
+  text-decoration: underline;
+  height: 10px;
+  transition: white 0.5s ease, transform 0.5s ease;
+}
+.introduction-link:hover {
+  transform: scaleX(1) translateX(5px);
+  color: #23c1c1;
+}
+.under-introduction {
+  display: flex;
+  height: 100px;
+  font-size: 25px;
+  align-items: center;
+  color: #9cb2b2;
+  background-color: #e1f2f2;
+  justify-content: space-around;
+}
+.uses {
+  display: flex;
+  padding: 0 50px;
+  height: 55vh;
+  gap: 30px;
+  align-items: center;
+  color: black;
+}
+.uses-boxes {
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  transition: box-shadow 0.4s ease;
+}
+.uses-boxes:hover {
+  box-shadow: 0px 10px 20px -15px black;
+}
+.about-us {
+  display: flex;
+  color: black;
+}
+.about-us-img {
+  height: auto;
+  width: 550px;
+}
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: space-around;
+  padding-left: 60px;
+  padding-right: 180px;
+  background-color: #fbfbfb;
+}
+.about-us-content > h4 {
+  margin: 10px 0;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.about-us-content > p {
+  margin: 0px;
+  color: rgb(139, 139, 139);
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.about-us-content > h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+  margin-top: 60px;
+}
+.about-us-button {
+  width: 140px;
+  height: 45px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.services-content {
+  display: flex;
+  animation: slide 5s infinite ease-in-out;
+  gap: 10px;
+  overflow: hidden;
+  justify-content: center;
+}
+.services {
+  position: relative;
+}
+.services-img {
+  height: 250px;
+  width: 100%;
+}
+.hider-first,
+.hider-second {
+  position: absolute;
+  z-index: 1;
+  height: 250px;
+  width: 206px;
+  background-color: white;
+}
+.hider-second {
+  transform: translate(404%, 0%);
+}
+
+@keyframes slide {
+  0%,
+  25% {
+    transform: translateX(0); /* Show 1,2,3,4 */
+  }
+  50%,
+  75% {
+    transform: translateX(-200px); /* Show 2,3,4,5 */
+  }
+  100% {
+    transform: translateX(0); /* Back to 1,2,3,4 */
+  }
+}
