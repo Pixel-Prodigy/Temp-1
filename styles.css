@@ -174,9 +174,6 @@ h1 {
   display: flex;
   flex-flow: column wrap;
 }
-* {
-  outline: auto;
-}
 @media (max-width: 900px) {
   .header-middle {
     display: none;
